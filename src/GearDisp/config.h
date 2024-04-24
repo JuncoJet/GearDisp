@@ -1,0 +1,20 @@
+#include <arduino.h>
+#define K1 PA13
+#define K2 PA14
+#define K3 PB3
+#define K4 PA1
+#define K5 PA0
+#define K6 PF0
+#define K7 PF1
+#define K8 PB1
+#define K9 PB2
+#define SCK PA5
+#define SI PA7
+#define SO PA6
+#define RX PA3
+#define TX PA2
+#define BOOT PB6
+#define CS PA4
+#define IRQ RX
+#define QUARTZ_MHZ 8
+#define SPI_MHZ 8
