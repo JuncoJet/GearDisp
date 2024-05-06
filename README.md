@@ -15,6 +15,19 @@ https://github.com/timurrrr/RaceChronoDiyBleDevice
 * 在BRZ上支持上电自动开机，开机自检有倒计时动画，如果蓝条卡死，说明自检失败
 * 其他车辆移植时注意，OBDII接口是否有自动断电功能，如果没有将会常亮，耗电大概0.6W（12V*0.05A）
 
+OBDII接线
+-
+![](https://raw.githubusercontent.com/JuncoJet/GearDisp/master/demo/ODBII.jpg)
+
+演示文件
+-
+![](https://raw.githubusercontent.com/JuncoJet/GearDisp/master/demo/DEMO1.jpg)
+
+视频演示
+
+[视频1](https://github.com/JuncoJet/GearDisp/raw/master/demo/b0658d4480e8a4c6e09b6a2c1a97a18c.mp4)
+[视频2](https://github.com/JuncoJet/GearDisp/raw/master/demo/9278196ed49b6dbba883d6622d1ccc43.mp4)
+
 目录结构
 -
 * mod 包含外壳的3D模型，STP文件和NX12的设计文件
