@@ -77,15 +77,17 @@ void loop(){
     //test();
     can.getRpm();
     //can.getSpeed();
-    if(!disp){
-      byte g=can.gear;
-      if(!g)g=17;
-      else if(g>6)g=10;
-      leds.show(g);
-    }
     b=c+333;
   }
   can.response();
-  digitalWrite(K9,can.rpm>7200);//转速提示
-  if(disp)leds.vshow(can.oiltmp);
+  if(disp){
+    leds.vshow(can.oiltmp);
+  }else{
+    byte g=can.gear;
+    if(!g)g=17;
+    else if(g>6)g=10;
+    leds.show(g);
+    leds.cb=0;
+  }
+  digitalWrite(K9,leds.cb|(can.rpm>7200));//转速提示
 }
